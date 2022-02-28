@@ -14,6 +14,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.service.debuggable=1 \
     persist.service.adb.enable=1
 
+    # AiAi Config
+PRODUCT_COPY_FILES += \
+    device/google/pantah/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
