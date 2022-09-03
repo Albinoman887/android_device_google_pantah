@@ -9,6 +9,9 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_cheetah_64.mk)
 
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := statix_cheetah
 PRODUCT_MODEL := Pixel 7 Pro
