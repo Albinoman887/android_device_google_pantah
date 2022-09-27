@@ -22,6 +22,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# properties - system
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.spark.maintainer=Albinoman887
+    ro.spark.maintainer.username=Albinoman887
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
