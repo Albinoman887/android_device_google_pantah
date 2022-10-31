@@ -32,7 +32,8 @@ TARGET_KERNEL_EXT_MODULE_ROOT := kernel/google/pantah/private/google-modules
 TARGET_KERNEL_EXT_MODULES := \
     amplifiers/audiometrics \
     amplifiers/cs35l41 \
-    amplifiers/cs40l25 \
+    amplifiers/cs35l45 \
+    amplifiers/cs40l26 \
     amplifiers/drv2624 \
     aoc \
     aoc/alsa \
@@ -40,15 +41,18 @@ TARGET_KERNEL_EXT_MODULES := \
     bluetooth/broadcom \
     bms \
     display/samsung \
-    edgetpu/drivers/edgetpu \
+    edgetpu/janeiro/drivers/edgetpu \
     gpu/mali_kbase \
     gpu/mali_pixel \
+    gxp/gs201 \
     lwis \
     nfc \
     power/reset \
     touch/common \
-    touch/fts/ftm5 \
+    touch/focaltech/ft3658 \
+    touch/synaptics \
     touch/sec \
     uwb/kernel \
-    wlan/bcmdhd4389
+    wlan/bcmdhd4389 \
+    video/gchips
 
