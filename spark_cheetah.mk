@@ -6,8 +6,8 @@ TARGET_SCREEN_WIDTH := 1440
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/google/raviole/aosp_cheetah_64.mk)
-$(call inherit-product, device/google/raviole/device-spark.mk)
+$(call inherit-product, device/google/pantah/aosp_cheetah.mk)
+$(call inherit-product, device/google/pantah/device-spark.mk)
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
