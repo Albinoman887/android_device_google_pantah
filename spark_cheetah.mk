@@ -9,9 +9,6 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
 $(call inherit-product, device/google/pantah/device-spark.mk)
 
-# Parts
-$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
-
 # Extra packages
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.gs101
