@@ -11,6 +11,9 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 $(call inherit-product, device/google/pantah/device-spark.mk)
 WITH_GAPPS := true
 
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 # Extra packages
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.gs101

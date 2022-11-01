@@ -1,7 +1,4 @@
-# include PixelParts
-$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
-
-# include artifacts allowlist
+# artifacts
 $(call inherit-product, device/google/pantah/artifacts.mk)
 
 # Overlays
