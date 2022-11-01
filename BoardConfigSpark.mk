@@ -24,7 +24,7 @@ TARGET_KERNEL_SOURCE := kernel/google/pantah/private/gs-google
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/pantah/vendor_dlkm.modules.load))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/pantah/vendor_boot.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat device/google/pantah/vendor_kernel_boot.modules.load))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(foreach m,$(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_RAW),$(notdir $(m)))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
@@ -50,8 +50,8 @@ TARGET_KERNEL_EXT_MODULES := \
     power/reset \
     touch/common \
     touch/focaltech/ft3658 \
-    touch/synaptics \
     touch/sec \
+    touch/synaptics \
     uwb/kernel \
     wlan/bcmdhd4389 \
     video/gchips
