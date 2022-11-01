@@ -7,8 +7,9 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
 $(call inherit-product, device/google/pantah/device-spark.mk)
-
+WITH_GAPPS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := spark_cheetah
