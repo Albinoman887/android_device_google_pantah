@@ -14,6 +14,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.service.debuggable=1 \
     persist.service.adb.enable=1
 
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
