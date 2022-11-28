@@ -2,7 +2,7 @@
 $(call inherit-product, device/google/pantah/artifacts.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/pantah/overlay-spark
+DEVICE_PACKAGE_OVERLAYS += device/google/pantah/overlay-lineage
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     NowPlayingOverlay
@@ -21,10 +21,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
 # properties - system
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.spark.maintainer=Albinoman887 \
-    ro.spark.maintainer.username=Albinoman887
-    
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
 
