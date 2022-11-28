@@ -17,11 +17,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Touch
+include hardware/google/pixel/touch/device.mk
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
-    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
 # properties - system
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
