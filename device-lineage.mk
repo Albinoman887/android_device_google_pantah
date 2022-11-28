@@ -35,3 +35,8 @@ TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 PIXEL_DEVICE := true
+
+# GApps
+WITH_GMS := true
+$(call inherit-product, vendor/gms/products/gms.mk)
+include vendor/gms/products/board.mk
