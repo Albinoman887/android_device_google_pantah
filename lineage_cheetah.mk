@@ -15,7 +15,7 @@ $(call inherit-product, device/google/pantah/device-lineage.mk)
 
 # inherit gapps
 $(call inherit-product, vendor/gms/products/gms.mk)
-#WITH_GMS := true
+WITH_GMS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
