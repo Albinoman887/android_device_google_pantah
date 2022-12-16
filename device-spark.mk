@@ -36,3 +36,12 @@ TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 PIXEL_DEVICE := true
+
+# Default notification/alarm sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Fresh_start.ogg
+
+# Default ringtone
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Orion.ogg
