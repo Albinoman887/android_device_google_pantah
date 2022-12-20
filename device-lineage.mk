@@ -4,7 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# artifacts
+PIXEL_DEVICE := true
+
+# Artifacts allowlist
 $(call inherit-product, device/google/pantah/artifacts.mk)
 
 # Overlays
@@ -13,14 +15,13 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
-# EUICC
+# Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
-PIXEL_DEVICE := true
 # Build necessary packages for vendor
 
 # Audio
