@@ -9,9 +9,12 @@ PIXEL_DEVICE := true
 # Artifacts allowlist
 $(call inherit-product, device/google/pantah/artifacts.mk)
 
+# Gapps
+$(call inherit-product, vendor/gms/products/gms.mk)
+WITH_GMS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
