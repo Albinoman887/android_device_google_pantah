@@ -2,20 +2,19 @@
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common SparkOS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/google/gs201/spark_common.mk)
+$(call inherit-product, device/google/gs201/lineage_common.mk)
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
-$(call inherit-product, device/google/pantah/device-spark.mk)
+$(call inherit-product, device/google/pantah/device-lineage.mk)
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
-$(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := spark_cheetah
+PRODUCT_NAME := lineage_cheetah
 PRODUCT_MODEL := Pixel 7 Pro
 PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
