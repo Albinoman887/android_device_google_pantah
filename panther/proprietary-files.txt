@@ -253,6 +253,9 @@ system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.experimental2022_system.jar
 system_ext/framework/com.google.android.camera.extensions.jar
 
+# FaceEnroll
+system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk
+
 # Edge TPU
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
 system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc
