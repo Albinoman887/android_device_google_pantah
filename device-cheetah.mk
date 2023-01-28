@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-TARGET_KERNEL_DIR ?= device/google/pantah-kernel
-TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernel/kernel-headers
+TARGET_KERNEL_DIR ?= device/google/kirisakura_pantah-kernel
+TARGET_BOARD_KERNEL_HEADERS := device/google/kirisakura_pantah-kernel/kernel-headers
 
 $(call inherit-product-if-exists, vendor/google_devices/pantah/prebuilts/device-vendor-cheetah.mk)
 $(call inherit-product-if-exists, vendor/google_devices/gs201/prebuilts/device-vendor.mk)
