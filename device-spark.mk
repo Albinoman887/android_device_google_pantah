@@ -16,6 +16,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.service.debuggable=1 \
     persist.service.adb.enable=1
 
+# ih8sn
+PRODUCT_PACKAGES += \
+    ih8sn
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/ih8sn
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
