@@ -108,6 +108,37 @@ on property:vendor.device.modules.ready=1
     chown system system /proc/focaltech_touch/selftest/Short
     chown system system /proc/focaltech_touch/selftest/Strength
 
+# Kirisakura kernel
+    write /proc/sys/net/ipv4/tcp_wmem "262144 524288 8388608"
+    write /sys/kernel/mm/lru_gen/enabled "y"
+    write /sys/kernel/mm/lru_gen/min_ttl_ms "5000"
+
+    write /proc/sys/vm/percpu_pagelist_high_fraction "96"
+
+    write /dev/blkio/background/blkio.ssg.max_available_ratio "25"
+
+    write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/lcpi_threshold "2"
+    write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/spc_threshold "44"
+    write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/limit_frequency "1197000"
+
+    write /sys/devices/system/cpu/cpufreq/policy4/sched_pixel/lcpi_threshold "4"
+    write /sys/devices/system/cpu/cpufreq/policy4/sched_pixel/spc_threshold "25"
+    write /sys/devices/system/cpu/cpufreq/policy4/sched_pixel/limit_frequency "1328000"
+
+    write /sys/devices/system/cpu/cpufreq/policy6/sched_pixel/lcpi_threshold "4"
+    write /sys/devices/system/cpu/cpufreq/policy6/sched_pixel/spc_threshold "20"
+    write /sys/devices/system/cpu/cpufreq/policy6/sched_pixel/limit_frequency "1426000"
+
+   write /proc/vendor_sched/pmu_poll_time "10"
+   #echo 1 > /proc/vendor_sched/pmu_poll_enable
+    write /sys/devices/system/cpu/cpufreq/policy0/sched_pixel/pmu_limit_enable "1"
+    write /sys/devices/system/cpu/cpufreq/policy4/sched_pixel/pmu_limit_enable "1"
+    write /sys/devices/system/cpu/cpufreq/policy6/sched_pixel/pmu_limit_enable "1"
+
+    stop vendor.power-hal-aidl;
+
+    start vendor.power-hal-aidl;
+
 # Override SF and RE uclamps to 0 on boot after being set elsewhere, for adpf cpu hints
 on property:sys.boot_completed=1
     trigger override-sf-uclamp
