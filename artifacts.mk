@@ -76,7 +76,4 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib64/android.hardware.nfc-V1-ndk.so \
     system/app/GmsCompat/GmsCompat.apk \
     system/app/GmsCompatConfig/GmsCompatConfig.apk \
-    system/etc/sysconfig/whitelist_app.grapheneos.gmscompat.xml \
-    system/bin/ih8sn \
-    system/etc/init/ih8sn.rc
-
+    system/etc/sysconfig/whitelist_app.grapheneos.gmscompat.xml
