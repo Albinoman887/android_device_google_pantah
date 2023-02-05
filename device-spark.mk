@@ -18,6 +18,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# sepolicy that are required with kirisakura kernel's custom powerhint module
+BOARD_SEPOLICY_DIRS += device/google/pantah/sepolicy_kirisakura
+
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
