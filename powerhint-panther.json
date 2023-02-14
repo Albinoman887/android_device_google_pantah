@@ -854,6 +854,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "MemFreq",
+      "Duration": 5000,
+      "Value": "1539000"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "MIFTargetLoad",
       "Duration": 5000,
       "Value": "80 10 80"
@@ -1520,7 +1526,7 @@
       "PowerHint": "CAMERA_STREAMING_EXTREME",
       "Node": "MemFreq",
       "Duration": 0,
-      "Value": "1014000"
+      "Value": "1539000"
     },
     {
       "PowerHint": "CAMERA_STREAMING_EXTREME",
