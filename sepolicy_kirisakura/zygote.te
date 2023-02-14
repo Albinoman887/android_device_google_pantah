@@ -1,2 +1,2 @@
-allow zygote vendor_fw_file dir { search write read open getattr map };
+allow zygote vendor_fw_file:dir { search write read open getattr map };
 
