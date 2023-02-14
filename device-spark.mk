@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-spark
 
