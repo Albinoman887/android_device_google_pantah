@@ -25,7 +25,8 @@ PRODUCT_COPY_FILES += \
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
-    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
+    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
