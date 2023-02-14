@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PIXEL_DEVICE := true
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
