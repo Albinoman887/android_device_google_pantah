@@ -8,9 +8,6 @@
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
 $(call inherit-product, device/google/gs201/spark_common.mk)

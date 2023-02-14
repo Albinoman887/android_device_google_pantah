@@ -11,8 +11,12 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-spark
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# PowerShare
-#include hardware/google/pixel/powershare/device.mk
+# Quick tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# UDFPS
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Build necessary packages for vendor
 
