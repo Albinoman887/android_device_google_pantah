@@ -4,24 +4,23 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution X stuff.
+# Inherit some common SparkOS stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
-$(call inherit-product, device/google/gs201/evolution_common.mk)
+$(call inherit-product, device/google/gs201/spark_common.mk)
 
-include device/google/pantah/cheetah/device-evolution.mk
+include device/google/pantah/cheetah/device-spark.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7 Pro
-PRODUCT_NAME := evolution_cheetah
+PRODUCT_NAME := spark_cheetah
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=cheetah \
