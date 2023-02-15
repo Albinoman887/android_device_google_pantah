@@ -19,7 +19,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # sepolicy that are required with kirisakura kernel's custom powerhint module
-BOARD_SEPOLICY_DIRS += device/google/pantah/sepolicy_kirisakura
+BOARD_SEPOLICY_DIRS += device/google/pantah/sepolicy/kirisakura
+
+# Policy for Spark's Smart Charging impl
+BOARD_SEPOLICY_DIRS += device/google/pantah/sepolicy/vendor
 
 # properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
