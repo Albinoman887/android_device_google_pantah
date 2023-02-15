@@ -52,9 +52,4 @@ as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</strin
     <string name="config_SmartChargingSuspendValue" translatable="false">Discharging</string>
     <string name="config_SmartChargingResumeValue" translatable="false">Charging</string>
 
-    <!-- Battery Health -->
-    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
-    <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
-    <bool name="config_supportBatteryHealth">false</bool>
 </resources>
