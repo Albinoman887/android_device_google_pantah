@@ -20,8 +20,12 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
 
+    <!-- Smart Charging -->
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">false</bool>
+
     <!-- Battery Health -->
-    <bool name="config_supportBatteryHealth">true</bool>
+    <bool name="config_supportBatteryHealth">false</bool>
     <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
     <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full_design</string>
     <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
