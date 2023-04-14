@@ -31,6 +31,7 @@ RICE_MAINTAINER := Albinoman887
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_HAS_UDFPS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_USE_PIXEL_FINGERPRINT := false
 
 # sysconfig and permissions XML from stock
