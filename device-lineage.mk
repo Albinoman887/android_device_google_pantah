@@ -22,6 +22,13 @@ TARGET_CORE_GMS_EXTRAS := true
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Rising
+RICE_MAINTAINER := Albinoman887
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_HAS_UDFPS := true
+TARGET_USE_PIXEL_FINGERPRINT := false
+
 # Build necessary packages for vendor
 
 # Audio
