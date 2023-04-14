@@ -11,6 +11,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Expose AUX to Google Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
+
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
