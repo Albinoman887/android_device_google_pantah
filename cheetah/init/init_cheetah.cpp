@@ -34,5 +34,6 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     OverrideProperty("ro.rice.chipset", "Google Tensor");
+    OverrideProperty("ro.rice.device", "Google Pixel 7 Pro");
     OverrideProperty("ro.rice.maintainer", "Albinoman887");
 }
