@@ -11,6 +11,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Fs-verity
+PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
 # GMS
 WITH_GMS := true
