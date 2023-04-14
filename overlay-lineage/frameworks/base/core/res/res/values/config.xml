@@ -25,4 +25,6 @@
     <integer name="config_smartChargingBatteryResumeLevel">79</integer>
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/devices/platform/google,charger/</string>
 
+    <!-- Enforce DisplayModeDirector to select user preferred resolution -->
+    <bool name="config_forceToUseSelectedResolution">true</bool>
 </resources>
