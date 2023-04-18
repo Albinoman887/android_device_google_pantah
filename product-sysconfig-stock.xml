@@ -35,10 +35,6 @@
     <feature name="com.google.android.feature.PIXEL_2022_MIDYEAR_EXPERIENCE" />
     <!-- cheetah/proprietary/product/etc/sysconfig/pixel_experience_2022.xml -->
     <feature name="com.google.android.feature.PIXEL_2022_EXPERIENCE" />
-
-    <!-- Allow GoogleCamera app in power save (background service to keep Camera
-    process alive). -->
-    <allow-in-power-save package="com.google.android.GoogleCamera" />
     
   <whitelisted-staged-installer package="com.android.vending" isModulesInstaller="true" />
   <whitelisted-staged-installer package="com.google.android.GoogleCamera" />
