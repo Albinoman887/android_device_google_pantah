@@ -27,7 +27,7 @@ TARGET_USE_GOOGLE_TELEPHONY := true
 include hardware/google/pixel/powershare/device.mk
 
 # Rising
-RICE_MAINTAINER := Albinoman887
+RISING_MAINTAINER := Albinoman887
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_HAS_UDFPS := true
