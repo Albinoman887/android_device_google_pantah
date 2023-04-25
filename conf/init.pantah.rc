@@ -115,6 +115,3 @@ on property:sys.boot_completed=1
 on override-sf-uclamp
     write /proc/vendor_sched/rt_uclamp_min 0
     write /proc/vendor_sched/sf_uclamp_min 0
-
-on post-fs-data
-    chown system system /sys/devices/platform/google,charger/

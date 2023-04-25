@@ -19,12 +19,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
-    <integer name="config_smartChargingBatteryLevel">80</integer>
-    <integer name="config_smartChargingBatteryResumeLevel">79</integer>
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/devices/platform/google,charger/</string>
-
     <!-- Enforce DisplayModeDirector to select user preferred resolution -->
     <bool name="config_forceToUseSelectedResolution">true</bool>
 </resources>
