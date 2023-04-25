@@ -10,4 +10,4 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cheetah
 
 include device/google/pantah/BoardConfigLineage.mk
 
-#include vendor/google/cheetah/BoardConfigVendor.mk
+include vendor/google/cheetah/BoardConfigVendor.mk
