@@ -29,8 +29,7 @@ PRODUCT_COPY_FILES += \
 
 # AudioEffectHAL Configuration
 PRODUCT_COPY_FILES += \
-    device/google/pantah/audio/$(AUDIO_TABLE_FOLDER)/config/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    device/google/pantah/audio/$(AUDIO_TABLE_FOLDER)/config/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf
+    device/google/pantah/audio/$(AUDIO_TABLE_FOLDER)/config/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 # Mixer Path Configuration for AudioHAL
 PRODUCT_COPY_FILES += \
