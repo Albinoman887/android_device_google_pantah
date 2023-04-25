@@ -33,7 +33,7 @@ void OverrideProperty(const char* name, const char* value) {
  * after the original property has been set.
  */
 void vendor_load_properties() {
-    OverrideProperty("ro.rice.chipset", "Google Tensor G2");
-    OverrideProperty("ro.rice.device", "Google Pixel 7 Pro");
-    OverrideProperty("ro.rice.maintainer", "Albinoman887");
+    OverrideProperty("ro.rising.chipset", "Google Tensor G2");
+    OverrideProperty("ro.rising.device", "Google Pixel 7 Pro");
+    OverrideProperty("ro.rising.maintainer", "Albinoman887");
 }
