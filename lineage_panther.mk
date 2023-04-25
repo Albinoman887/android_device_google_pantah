@@ -16,12 +16,13 @@ include device/google/pantah/panther/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
+PRODUCT_DEVICE := panther
 PRODUCT_MODEL := Pixel 7
 PRODUCT_NAME := lineage_panther
+PRODUCT_MANUFACTURER := Google
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+# Sushi Boot Animation
+SUSHI_BOOTANIMATION  := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=panther \

@@ -24,6 +24,15 @@ TARGET_USE_GOOGLE_TELEPHONY := true
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Rising
+RISING_MAINTAINER := Albinoman887
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_EXCLUDES_AUDIOFX := true
+
 # sysconfig and permissions XML from stock
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml \
