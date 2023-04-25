@@ -15,8 +15,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
-# Fs-verity
-PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
 # GMS
 WITH_GMS := true
