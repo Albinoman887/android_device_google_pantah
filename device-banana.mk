@@ -15,6 +15,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
+# GMS
+WITH_GMS := true
+TARGET_CORE_GMS := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
 # sysconfig and permissions XML from stock
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml \
