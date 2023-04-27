@@ -11,6 +11,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-banana
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Expose AUX to Google Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
+
 # Build necessary packages for vendor
 
 # Audio
