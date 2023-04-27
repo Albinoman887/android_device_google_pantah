@@ -18,6 +18,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
+# sysconfig and permissions XML from stock
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml \
+    $(LOCAL_PATH)/product-permissions-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-permissions-stock.xml
+
 # Build necessary packages for vendor
 
 # Audio
