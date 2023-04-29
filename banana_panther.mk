@@ -12,7 +12,7 @@ $(call inherit-product, vendor/banana/config/common.mk)
 $(call inherit-product, device/google/pantah/aosp_panther.mk)
 $(call inherit-product, device/google/gs201/banana_common.mk)
 
-include device/google/pantah/panther/device-lineage.mk
+include device/google/pantah/panther/device-banana.mk
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
