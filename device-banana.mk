@@ -16,8 +16,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
 # GMS
-WITH_GMS := true
-TARGET_CORE_GMS := false
+WITH_GAPPS := true
+TARGET_CORE_GAPPS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
