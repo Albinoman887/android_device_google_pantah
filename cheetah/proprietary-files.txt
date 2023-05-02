@@ -292,7 +292,7 @@ system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 
 # HBM
 system_ext/lib64/libhbmsvmanager_jni.so
-system_ext/priv-app/HbmSVManager/HbmSVManager.apk
+system_ext/priv-app/HbmSVManager/HbmSVManager.apk|8f6064600472984aeb5c75f37e7a01fdbad03f4e
 
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
