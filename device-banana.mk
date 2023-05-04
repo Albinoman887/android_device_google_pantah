@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
 # Banana Specific Build Properties
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
 
 # Build necessary packages for vendor
 
