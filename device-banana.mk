@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
+BANANA_MAINTAINER := Albinoman887
 
 # Build necessary packages for vendor
 
