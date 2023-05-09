@@ -5,5 +5,3 @@
 #
 
 include device/google/pantah/BoardConfigBanana.mk
-
-include vendor/google/panther/BoardConfigVendor.mk
