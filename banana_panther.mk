@@ -33,4 +33,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/panther/panther:13/TQ3A.230605.012/10204971:user/release-keys
 
-$(call inherit-product, vendor/google/panther/panther-vendor.mk)
