@@ -25,7 +25,6 @@
     <bool name="config_showRefreshRateQsTile">true</bool>
 
     <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
-    <integer name="config_aodMaxRefreshRate">60</integer>
 
     <!-- Burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
