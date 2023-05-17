@@ -32,6 +32,9 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 BANANA_MAINTAINER := Albinoman887
 
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
+
 # Build necessary packages for vendor
 
 # Audio

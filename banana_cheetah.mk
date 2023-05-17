@@ -15,7 +15,6 @@ $(call inherit-product, device/google/gs201/banana_common.mk)
 include device/google/pantah/cheetah/device-banana.mk
 
 # Parts
-$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 $(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
 
 # Device identifier. This must come after all inclusions
