@@ -21,11 +21,6 @@ TARGET_CORE_GAPPS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
-# sysconfig and permissions XML from stock
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml \
-    $(LOCAL_PATH)/product-permissions-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-permissions-stock.xml
-
 # Banana Specific Build Properties
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
