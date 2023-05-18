@@ -6,19 +6,18 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_panther.mk)
-$(call inherit-product, device/google/gs201/banana_common.mk)
+$(call inherit-product, device/google/gs201/custom_common.mk)
 
-include device/google/pantah/panther/device-banana.mk
+include device/google/pantah/panther/device-custom.mk
 
-$(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7
-PRODUCT_NAME := banana_panther
+PRODUCT_NAME := alphadroid_panther
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -29,4 +28,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="panther-user 13 TQ2A.230505.002 9891397 release-keys"
 
 BUILD_FINGERPRINT := google/panther/panther:13/TQ2A.230505.002/9891397:user/release-keys
-

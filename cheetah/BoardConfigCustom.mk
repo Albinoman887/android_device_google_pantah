@@ -4,4 +4,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include device/google/pantah/BoardConfigBanana.mk
+include device/google/pantah/BoardConfigCustom.mk
