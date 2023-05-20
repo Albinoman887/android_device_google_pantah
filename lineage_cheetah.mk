@@ -10,7 +10,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
-$(call inherit-product, device/google/gs201/banana_common.mk)
+$(call inherit-product, device/google/gs201/lineage_common.mk)
 
 include device/google/pantah/cheetah/device-banana.mk
 
