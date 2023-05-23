@@ -19,6 +19,7 @@ persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 WITH_GAPPS := true
 PIXEL_DEVICE := true
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 PRODUCT_SYSTEM_PROPERTIES += \
