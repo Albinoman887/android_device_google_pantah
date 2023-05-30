@@ -23,8 +23,9 @@ EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.spark.maintainer=Albinoman887
+    ro.spark.maintainer=Albinoman887 \
     ro.spark.maintainer.username=Albinoman887
+
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
