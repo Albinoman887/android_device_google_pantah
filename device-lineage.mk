@@ -36,6 +36,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := false
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Build necessary packages for vendor
 
 # Audio
