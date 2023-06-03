@@ -26,9 +26,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.spark.maintainer=Albinoman887 \
     ro.spark.maintainer.username=Albinoman887
 
-
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
 
 # Build necessary packages for vendor
 
