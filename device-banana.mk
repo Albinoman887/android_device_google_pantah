@@ -33,6 +33,9 @@ TARGET_ENABLE_BLUR := true
 BANANA_MAINTAINER := Albinoman887
 PRODUCT_USE_SCUDO := true
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Build necessary packages for vendor
 
 # Audio
