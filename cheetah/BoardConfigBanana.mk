@@ -5,3 +5,5 @@
 #
 
 include device/google/pantah/BoardConfigBanana.mk
+
+include vendor/google/cheetah/BoardConfigVendor.mk
