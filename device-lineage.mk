@@ -16,7 +16,7 @@ PRODUCT_PACKAGES +=
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# Expose AUX to Google Camera
+# Build Properties to Expose AUX to Google Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
@@ -35,11 +35,11 @@ TARGET_INCLUDE_MATLOG := true
 TARGET_USE_PIXEL_LAUNCHER := false
 TARGET_EXCLUDES_AUDIOFX := false
 
-# We don't use the PE Implementation of Face Unlock
+# Force Disable the PixelExperience FaceUnlock implementation if present (we use google's instead)
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
-# PowerShare
-include hardware/google/pixel/powershare/device.mk
+# include LOS Powershare HAL if it exists
+-include hardware/google/pixel/powershare/device.mk
 
 # Build necessary packages for vendor
 
