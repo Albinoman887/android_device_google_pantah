@@ -20,21 +20,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
-# GMS
-WITH_GAPPS := 2
-TARGET_CORE_GAPPS := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_USE_GOOGLE_TELEPHONY := true
-
-# AlphaDroid Specific Build Properties
-TARGET_HAS_UDFPS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-ALPHA_MAINTAINER := Albinoman887
-TARGET_INCLUDE_MATLOG := true
-TARGET_USE_PIXEL_LAUNCHER := false
-TARGET_EXCLUDES_AUDIOFX := false
-
 # Force Disable the PixelExperience FaceUnlock implementation if present (we use google's instead)
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
