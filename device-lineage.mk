@@ -26,6 +26,11 @@ TARGET_FACE_UNLOCK_SUPPORTED := false
 # include LOS Powershare HAL if it exists
 -include hardware/google/pixel/powershare/device.mk
 
+# Gapps
+WITH_GMS := true
+WITH_GAPPS := true
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Build necessary packages for vendor
 
 # Audio
