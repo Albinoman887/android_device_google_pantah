@@ -8,7 +8,7 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # RRO Overlays
-PRODUCT_PACKAGES +=
+PRODUCT_PACKAGES += \
     PixelFeaturesOverlay \
     NowPlayingOverlay
 
