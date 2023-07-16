@@ -21,7 +21,7 @@ include hardware/google/pixel/powershare/device.mk
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
-ALPHA_MAINTAINER := Albinoman887
+SIGMA_MAINTAINER := Albinoman887
 TARGET_INCLUDE_MATLOG := true
 TARGET_USE_PIXEL_LAUNCHER := false
 TARGET_EXCLUDES_AUDIOFX := false
@@ -33,7 +33,7 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Face Unlock
-include vendor/google/facebook/device.mk
+include vendor/google/faceunlock/device.mk
 
 # Google Camera
 PRODUCT_PROPERTY_OVERRIDES += \
