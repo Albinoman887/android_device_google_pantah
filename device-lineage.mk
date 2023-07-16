@@ -33,7 +33,7 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := false
+include vendor/google/facebook/device.mk
 
 # Google Camera
 PRODUCT_PROPERTY_OVERRIDES += \
