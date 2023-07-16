@@ -14,15 +14,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
-# Expose AUX to Google Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
-
-# GMS
-WITH_GAPPS := 2
-TARGET_CORE_GAPPS := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_USE_GOOGLE_TELEPHONY := true
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
 
 # AlphaDroid Specific Build Properties
 TARGET_HAS_UDFPS := true
@@ -33,13 +26,20 @@ TARGET_INCLUDE_MATLOG := true
 TARGET_USE_PIXEL_LAUNCHER := false
 TARGET_EXCLUDES_AUDIOFX := false
 
-# We don't use the PE Implementation of Face Unlock
+# GMS
+WITH_GAPPS := 2
+TARGET_CORE_GAPPS := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
+# Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
-# PowerShare
-include hardware/google/pixel/powershare/device.mk
+# Google Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
-# PixelParts
+# PixelParts (HBM)
 include packages/apps/PixelParts/device.mk
 
 # Build necessary packages for vendor
