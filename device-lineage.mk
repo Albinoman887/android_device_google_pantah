@@ -42,6 +42,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PixelParts (HBM)
 include packages/apps/PixelParts/device.mk
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    PixelFrameworksOverlay
+
 # Build necessary packages for vendor
 
 # Audio
