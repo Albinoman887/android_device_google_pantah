@@ -36,6 +36,10 @@ TARGET_USE_GOOGLE_TELEPHONY := true
 include vendor/google/faceunlock/device.mk
 
 # Google Camera
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
