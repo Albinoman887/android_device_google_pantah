@@ -20,6 +20,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">google/panther/panther:13/TQ3A.230605.012/10204971:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">google/panther/panther:13/TQ3A.230705.001/10216780:user/release-keys</string>
 
 </resources>
