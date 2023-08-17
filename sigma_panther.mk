@@ -28,3 +28,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="panther-user 13 TQ3A.230805.001 10316531 release-keys"
 
 BUILD_FINGERPRINT := google/panther/panther:13/TQ3A.230805.001/10316531:user/release-keys
+
+$(call inherit-product, vendor/google/panther/panther-vendor.mk)
