@@ -39,9 +39,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
-# PixelParts (HBM)
-include packages/apps/PixelParts/device.mk
-
 # RRO Overlays
 PRODUCT_PACKAGES += \
     PixelFrameworksOverlay
