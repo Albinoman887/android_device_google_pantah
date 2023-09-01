@@ -7,6 +7,17 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+# Spark Specific Build Properties
+WITH_GAPPS := true
+PIXEL_DEVICE := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.spark.maintainer=Albinoman887 \
+    ro.spark.maintainer.username=Albinoman887
+
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
@@ -16,23 +27,6 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
-
-# AlphaDroid Specific Build Properties
-TARGET_HAS_UDFPS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-SIGMA_MAINTAINER := Albinoman887
-TARGET_INCLUDE_MATLOG := true
-TARGET_USE_PIXEL_LAUNCHER := false
-TARGET_EXCLUDES_AUDIOFX := false
-TARGET_DEFAULT_ADB_ENABLED = true
-
-# GAPPS (1 = Core, 2 = Full)
-GAPPS_BUILD_TYPE := 2
-WITH_GAPPS := 2
-TARGET_CORE_GAPPS := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Face Unlock
 include vendor/google/faceunlock/device.mk
